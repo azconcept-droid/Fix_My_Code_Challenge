@@ -18,7 +18,7 @@ class User():
 
     @email.setter
     def email(self, value):
-        """ Get user email if it is str """
+        """ Get user email if it is string """
         if type(value) is not str:
             raise TypeError("email must be a string")
         self.__email = value
