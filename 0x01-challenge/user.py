@@ -1,24 +1,24 @@
 #!/usr/bin/python3
 """
-User class
+User class module
 """
 
 
 class User():
-    """ Documentation """
+    """ User class model """
 
     def __init__(self, value=None):
-        """ Documentation """
+        """ Initialize user class """
         self.__email = value
 
     @property
     def email(self):
-        """ Documentation """
+        """ Return user email """
         return self.__email
 
     @email.setter
     def email(self, value):
-        """ Documentation """
+        """ Get user email if it is str """
         if type(value) is not str:
             raise TypeError("email must be a string")
         self.__email = value
